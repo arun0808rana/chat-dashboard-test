@@ -4,6 +4,7 @@ import TypingIndicator from "../../../../assets/typing_indiacator.gif";
 import SendIcon from "../../../../assets/send.svg";
 import EmojiIcon from "../../../../assets/emoji.svg";
 import AttachmentIcon from "../../../../assets/attachment.svg";
+import DPIcon from "../../../../assets/photo-1517841905240-472988babdf9.avif";
 
 function ChatArea() {
   const [messagesList, setMessagesList] = useState([
@@ -58,7 +59,7 @@ function ChatArea() {
           {messagesList.map((msg, index) => {
             return (
               <div className="chat-strip">
-                {!msg.isSelf ? <div className="chat-strip-dp"></div> : null}
+                {!msg.isSelf ? <div className="chat-strip-dp"><img src={DPIcon} alt="" /></div> : null}
 
                 <div className={"chat-msg " + (msg.isSelf ? "right" : "left")}>
                   <div className="chat-msg-time">

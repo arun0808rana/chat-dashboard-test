@@ -19,12 +19,27 @@ const Wrapper = styled.div`
     align-items: flex-end;
     flex-direction: column;
     .sidebar-route-links {
-      padding-right: 10px;
-      border-right: 4px solid var(--primary-cherry-color);
+      padding-right: 14px;
+      &.active {
+        padding-right: 10px;
+        border-right: 4px solid var(--primary-cherry-color);
+      }
     }
   }
   .sidebar-profile {
     padding: 8px;
+    .dp {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      overflow: hidden;
+      .dp-icon {
+        width: 40px;
+      }
+    }
   }
 `;
 

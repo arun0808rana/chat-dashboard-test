@@ -6,8 +6,8 @@ const Wrapper = styled.div`
     height: 100%;
     padding: 8px;
     .msg-item-dp {
-      min-width: 40px;
-      min-height: 40px;
+      width: 40px;
+      height: 40px;
       background-color: var(--secondary-cherry-color);
       border-radius: 100px;
       margin-right: 8px;
@@ -16,10 +16,52 @@ const Wrapper = styled.div`
       justify-content: center;
       font-size: 12px;
       color: var(--primary-cherry-color);
+      overflow: hidden;
+      img {
+        width: 40px;
+      }
     }
     &-upper-part {
       width: 100%;
       height: 300px;
+      .upper-msg-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-user-name{
+          margin: 16px;
+          font-weight: 500;
+          color: var(--primary-text-color);
+          font-size: 30px;
+        }
+      }
+      .msg-up-part-dp {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        /* overflow: hidden; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &-status {
+          bottom: -2px;
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          border-radius: 100px;
+          background-color: var(--primary-cherry-color);
+          right: 13px;
+          border: 2px solid white;
+        }
+        &-edit-profile-pic{
+          position: absolute;
+          display: none;
+         
+        }
+      }
     }
     &-lower-part {
       width: 100%;
@@ -55,7 +97,7 @@ const Wrapper = styled.div`
           }
           .name-msg-info-container {
             .msg-list-info {
-              /* width: 90%; */
+              width: 140px;
               font-size: 11px;
               color: var(--secondary-text-color);
             }

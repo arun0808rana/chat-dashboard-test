@@ -69,6 +69,13 @@ const Wrapper = styled.div`
         border-radius: 100px;
         background-color: white;
         margin-bottom: 8px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 40px;
+        }
       }
     }
     .main-msg {
@@ -113,7 +120,7 @@ const Wrapper = styled.div`
       background-color: white;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
         rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-        margin: 0 8px;
+      margin: 0 8px;
       &-input {
         border: none;
         height: 50px;
@@ -123,14 +130,14 @@ const Wrapper = styled.div`
       }
       &-input-icons {
         display: flex;
-        img{
-            margin-right: 8px;
-            &:last-child{
-                margin-right: 0;
-            }
+        img {
+          margin-right: 8px;
+          &:last-child {
+            margin-right: 0;
+          }
         }
-        &-send-btn{
-            cursor: pointer;
+        &-send-btn {
+          cursor: pointer;
         }
       }
     }
