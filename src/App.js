@@ -13,7 +13,7 @@ function App() {
       <Sidebar />
       <RouterOutlet>
         <Routes>
-          <Route exact path="/chat" element={<Chat />} />
+          <Route exact path="/" element={<Chat />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
