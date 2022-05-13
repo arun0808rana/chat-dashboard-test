@@ -91,19 +91,45 @@ const Wrapper = styled.div`
       }
     }
     &-lower-part {
+      margin-top: 16px;
       &-heading {
         font-weight: bold;
       }
       &-files {
         &-filetype {
           display: flex;
-          justify-content: space-between;
-          margin: 8px;
+          margin: 16px;
+          cursor: pointer;
           &-lhs {
-            width: 50px;
-            height: 50px;
-            background-color: var(--secondary-cherry-color);
+            width: 40px;
+            height: 40px;
             border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.document {
+              background-color: #d9e9ff;
+            }
+            &.images {
+              background-color: #ffefc6;
+            }
+            &.video {
+              background-color: #ffe2e2;
+            }
+            &.others {
+              background-color: var(--secondary-cherry-color);
+            }
+          }
+          &-middle {
+            margin: auto auto auto 16px;
+            &-heading {
+              font-weight: bold;
+              font-size: 14px;
+            }
+            &-details {
+              font-size: 12px;
+              color: var(--secondary-text-color);
+            }
           }
         }
       }

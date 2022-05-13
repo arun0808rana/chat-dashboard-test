@@ -35,6 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const RouterOutlet = styled.div`
+width: 100%;
   border-left: 1px solid var(--border-color);
   border-radius: 20px 0 0 20px;
   padding: 8px;
