@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/chat-dashboard/static/css/main.2d90f3bf.css",
+    "main.js": "/chat-dashboard/static/js/main.86ad608c.js",
+    "static/js/787.246184cd.chunk.js": "/chat-dashboard/static/js/787.246184cd.chunk.js",
+    "static/media/photo-1517841905240-472988babdf9.avif": "/chat-dashboard/static/media/photo-1517841905240-472988babdf9.599f5be69a76cd88f4f3.avif",
+    "static/media/typing_indiacator.gif": "/chat-dashboard/static/media/typing_indiacator.2ce5c7c546f39287aac0.gif",
+    "static/media/dp.png": "/chat-dashboard/static/media/dp.c6642e6d6fa70a6e2bf4.png",
+    "static/media/photo-1494790108377-be9c29b29330.avif": "/chat-dashboard/static/media/photo-1494790108377-be9c29b29330.59e178df5dff0e0bb8fb.avif",
+    "static/media/logo.svg": "/chat-dashboard/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/bi_camera.svg": "/chat-dashboard/static/media/bi_camera.faa226e401c43fd2d118387e026b0461.svg",
+    "static/media/emoji.svg": "/chat-dashboard/static/media/emoji.e33de1485fb4de2c360cfba06d253884.svg",
+    "static/media/settings.svg": "/chat-dashboard/static/media/settings.3c0888e5a9559e94b802a29878afee91.svg",
+    "static/media/fluent_call-16-regular.svg": "/chat-dashboard/static/media/fluent_call-16-regular.fc830ef0e6685b31aa83026b740ae3ca.svg",
+    "static/media/bi_file-image.svg": "/chat-dashboard/static/media/bi_file-image.c2783ca19fa4340a83c4652a92444f57.svg",
+    "static/media/attachment.svg": "/chat-dashboard/static/media/attachment.30e27eb2f6e48ac6f615757aef063bf5.svg",
+    "static/media/bi_camera-video (1).svg": "/chat-dashboard/static/media/bi_camera-video (1).3ae8667b3d2c86fbfd629ac64ff4cd3a.svg",
+    "static/media/bi_camera-video.svg": "/chat-dashboard/static/media/bi_camera-video.7949495ca9c4aade5033eec394a04ecb.svg",
+    "static/media/send.svg": "/chat-dashboard/static/media/send.0d211a06ba7c9106790577d2743faf2d.svg",
+    "static/media/fluent_document-16-regular.svg": "/chat-dashboard/static/media/fluent_document-16-regular.c18887bbe72f82cbdf5e5f0e4ed4f54a.svg",
+    "static/media/chat.svg": "/chat-dashboard/static/media/chat.2293b96857803c25acb447283a248f45.svg",
+    "static/media/akar-icons_link-chain.svg": "/chat-dashboard/static/media/akar-icons_link-chain.988639f1505095257102d1bc107665cf.svg",
+    "static/media/files.svg": "/chat-dashboard/static/media/files.e80080afc036ce08eb8be43339b2275a.svg",
+    "index.html": "/chat-dashboard/index.html",
+    "static/media/profile.svg": "/chat-dashboard/static/media/profile.b601586d9f87d6f5bc68d45893e820aa.svg",
+    "static/media/akar-icons_search (1).svg": "/chat-dashboard/static/media/akar-icons_search (1).f19813a57ab1ce00b9f163186ae54727.svg",
+    "static/media/akar-icons_search.svg": "/chat-dashboard/static/media/akar-icons_search.6d954ac489bc49d276eaf0e5dfeb12c2.svg",
+    "static/media/lucide_binary.svg": "/chat-dashboard/static/media/lucide_binary.6cdd6a3c1a8e80463d7fcbe810576224.svg",
+    "static/media/chevronright.svg": "/chat-dashboard/static/media/chevronright.8a132b3c7b2d027f1be2ce810e548c78.svg",
+    "main.2d90f3bf.css.map": "/chat-dashboard/static/css/main.2d90f3bf.css.map",
+    "main.86ad608c.js.map": "/chat-dashboard/static/js/main.86ad608c.js.map",
+    "787.246184cd.chunk.js.map": "/chat-dashboard/static/js/787.246184cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d90f3bf.css",
+    "static/js/main.86ad608c.js"
+  ]
+}
