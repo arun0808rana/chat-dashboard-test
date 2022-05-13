@@ -5,6 +5,9 @@ import SendIcon from "../../../../assets/send.svg";
 import EmojiIcon from "../../../../assets/emoji.svg";
 import AttachmentIcon from "../../../../assets/attachment.svg";
 import DPIcon from "../../../../assets/photo-1517841905240-472988babdf9.avif";
+import VideoIcon from "../../../../assets/bi_camera-video (1).svg";
+import CallIcon from "../../../../assets/fluent_call-16-regular.svg";
+import SearchIcon from "../../../../assets/akar-icons_search (1).svg";
 
 function ChatArea() {
   const [messagesList, setMessagesList] = useState([
@@ -50,8 +53,23 @@ function ChatArea() {
       <div className="chat-area-heading">
         <div className="chat-area-heading-lhs">Mansi Rathore</div>
         <div className="chat-area-heading-rhs">
-          <button className="chat-area-heading-btn active">Messages</button>
-          <button className="chat-area-heading-btn">Participants</button>
+          {/* <button className="chat-area-heading-btn active">Messages</button>
+          <button className="chat-area-heading-btn">Participants</button> */}
+          <img
+            src={CallIcon}
+            alt="audio call icon"
+            className="chat-area-heading-rhs-icon"
+          />
+          <img
+            src={VideoIcon}
+            alt="video call icon"
+            className="chat-area-heading-rhs-icon"
+          />
+          <img
+            src={SearchIcon}
+            alt="search icon"
+            className="chat-area-heading-rhs-icon"
+          />
         </div>
       </div>
       <div className="chat-area-body">
@@ -59,7 +77,11 @@ function ChatArea() {
           {messagesList.map((msg, index) => {
             return (
               <div className="chat-strip">
-                {!msg.isSelf ? <div className="chat-strip-dp"><img src={DPIcon} alt="" /></div> : null}
+                {!msg.isSelf ? (
+                  <div className="chat-strip-dp">
+                    <img src={DPIcon} alt="" />
+                  </div>
+                ) : null}
 
                 <div className={"chat-msg " + (msg.isSelf ? "right" : "left")}>
                   <div className="chat-msg-time">
@@ -81,11 +103,19 @@ function ChatArea() {
           </div>
         </div>
         <div className="chat-area-body-typing-box">
-          <input type="text" placeholder="Write your message..." className="chat-area-body-typing-box-input" />
+          <input
+            type="text"
+            placeholder="Write your message..."
+            className="chat-area-body-typing-box-input"
+          />
           <div className="chat-area-body-typing-box-input-icons">
             <img src={EmojiIcon} alt="emoji icon" />
             <img src={AttachmentIcon} alt="attachement icon" />
-            <img src={SendIcon} alt="send icon" className="chat-area-body-typing-box-input-icons-send-btn"/>
+            <img
+              src={SendIcon}
+              alt="send icon"
+              className="chat-area-body-typing-box-input-icons-send-btn"
+            />
           </div>
         </div>
       </div>

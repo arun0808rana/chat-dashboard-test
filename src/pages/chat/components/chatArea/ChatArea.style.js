@@ -17,6 +17,12 @@ const Wrapper = styled.div`
       color: var(--primary-text-color);
       font-weight: 500;
     }
+    &-rhs{
+      &-icon{
+        margin-right: 16px;
+        cursor: pointer;
+      }
+    }
     &-btn {
       /* background-color: #d1e6e7; */
       cursor: pointer;
