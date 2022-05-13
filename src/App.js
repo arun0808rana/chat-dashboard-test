@@ -26,6 +26,7 @@ export default App;
 
 const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
   height: 720px;
   width: 1200px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

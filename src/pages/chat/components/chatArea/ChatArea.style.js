@@ -15,6 +15,7 @@ const Wrapper = styled.div`
     height: 60px;
     &-lhs {
       color: var(--primary-text-color);
+      font-weight: 500;
     }
     &-btn {
       /* background-color: #d1e6e7; */
