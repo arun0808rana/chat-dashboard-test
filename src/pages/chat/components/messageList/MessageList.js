@@ -3,6 +3,7 @@ import Wrapper from "./MessageList.style";
 import DPIcon from "../../../../assets/photo-1517841905240-472988babdf9.avif";
 import ProfilePic from "../../../../assets/dp.png";
 import CameraIcon from "../../../../assets/bi_camera.svg";
+import SearchIcon from "../../../../assets/akar-icons_search.svg";
 
 function MessageList() {
   const [userList, setUserList] = useState([
@@ -49,6 +50,11 @@ function MessageList() {
       time: "12:03 AM",
     },
   ]);
+  const [isOnline, setIsOnline] = useState("Online");
+  const onStatusChange = (e) => {
+    setIsOnline(e.target.value);
+    console.log("e.target.value", e.target.value);
+  };
   return (
     <Wrapper>
       <div className="message-list">
@@ -56,17 +62,36 @@ function MessageList() {
           <div className="upper-msg-container">
             <div className="msg-up-part-dp">
               <img src={ProfilePic} alt="dp" />
-              <div className="msg-up-part-dp-status"></div>
+              <div
+                className={
+                  "msg-up-part-dp-status " +
+                  (isOnline === "Online" ? "online" : "")
+                }
+              ></div>
               <div className="msg-up-part-dp-edit-profile-pic">
                 <img src={CameraIcon} alt="edit" />
               </div>
             </div>
             <div className="upper-msg-container-user-name">Jane Doe</div>
-            <div className="status-changer">
-              <select name="" id="">
+            <div className="message-list-status-changer">
+              <select onChange={onStatusChange} value={isOnline}>
                 <option value="Online">Online</option>
                 <option value="Away">Away</option>
               </select>
+            </div>
+            <div className="search-chat">
+              <input
+                type="text"
+                className="search-chat-input"
+                placeholder="Search"
+              />
+              <div className="search-chat-icon">
+                <img src={SearchIcon} alt="search" />
+              </div>
+            </div>
+            <div className="add-new-chat-user">
+              <div className="add-new-chat-user-text">Start New Chat</div>
+              <button className="add-new-chat-user-btn">+</button>
             </div>
           </div>
         </div>

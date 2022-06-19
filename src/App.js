@@ -13,7 +13,7 @@ function App() {
       <Sidebar />
       <RouterOutlet>
         <Routes>
-          <Route exact path="/chat" element={<Chat />} />
+          <Route exact path="/" element={<Chat />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
@@ -26,6 +26,7 @@ export default App;
 
 const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
   height: 720px;
   width: 1200px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -34,6 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const RouterOutlet = styled.div`
+width: 100%;
   border-left: 1px solid var(--border-color);
   border-radius: 20px 0 0 20px;
   padding: 8px;
