@@ -16,15 +16,15 @@ function Sidebar() {
         </Link>
       </div>
       <div className="sidebar-central-icons">
-        <Link className="sidebar-route-links active" to="chat">
+        <Link className="sidebar-route-links active" to="/">
           <img src={ChatIcon} alt="chat icon" />
         </Link>
-        <Link className="sidebar-route-links" to="settings">
+        <Link className="sidebar-route-links" to="/">
           <img src={SettingsIcon} alt="settings icon" />
         </Link>
       </div>
       <div className="sidebar-profile">
-        <Link className="sidebar-route-links dp" to="profile">
+        <Link className="sidebar-route-links dp" to="/">
           <img src={DPIcon} className="dp-icon" alt="profile icon" />
         </Link>
       </div>

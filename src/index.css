@@ -43,6 +43,6 @@ code {
   --self-chat-string-color: #d0d3e3;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus, select:focus{
   outline: none;
 }

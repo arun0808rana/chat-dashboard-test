@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
-  width: 60px;
+  width: 70px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,8 @@ const Wrapper = styled.div`
   }
   .sidebar-profile {
     padding: 8px;
+    margin-bottom: 8px;
+    display: flex;justify-content: center;
     .dp {
       width: 40px;
       height: 40px;

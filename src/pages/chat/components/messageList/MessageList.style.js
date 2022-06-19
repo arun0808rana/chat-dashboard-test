@@ -5,6 +5,16 @@ const Wrapper = styled.div`
   .message-list {
     height: 100%;
     padding: 8px;
+    &-status-changer {
+      select {
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        option {
+          cursor: pointer;
+        }
+      }
+    }
     .msg-item-dp {
       width: 40px;
       height: 40px;
@@ -24,17 +34,56 @@ const Wrapper = styled.div`
     &-upper-part {
       width: 100%;
       height: 300px;
-      .upper-msg-container{
+      .upper-msg-container {
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        &-user-name{
-          margin: 16px;
+        justify-content: flex-end;
+        &-user-name {
           font-weight: 500;
           color: var(--primary-text-color);
           font-size: 30px;
+        }
+        .search-chat {
+          position: relative;
+          &-input {
+            border: none;
+            height: 40px;
+            width: 270px;
+            margin: 16px 0;
+            background-color: var(--selection-color);
+            border-radius: 10px;
+            padding: 0 32px 0 16px;
+          }
+          &-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 8px;
+            cursor: pointer;
+          }
+        }
+        .add-new-chat-user {
+          display: flex;
+          align-items: center;
+          margin: 4px 8px 16px auto;
+          &-btn {
+            background-color: var(--secondary-cherry-color);
+            cursor: pointer;
+            border-radius: 8px;
+            border-width: 0;
+            padding: 8px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-cherry-color);
+          }
+          &-text {
+            margin-right: 8px;
+            font-size: 14px;
+          }
         }
       }
       .msg-up-part-dp {
@@ -52,14 +101,16 @@ const Wrapper = styled.div`
           width: 18px;
           height: 18px;
           border-radius: 100px;
-          background-color: var(--primary-cherry-color);
+          background-color: #ff7500;
           right: 13px;
           border: 2px solid white;
         }
-        &-edit-profile-pic{
+        &-status.online {
+          background-color: var(--primary-cherry-color);
+        }
+        &-edit-profile-pic {
           position: absolute;
           display: none;
-         
         }
       }
     }
